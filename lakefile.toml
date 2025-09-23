@@ -1,0 +1,10 @@
+name = "Lina1"
+version = "0.1.0"
+defaultTargets = ["lina1"]
+
+[[lean_lib]]
+name = "Lina1"
+
+[[lean_exe]]
+name = "lina1"
+root = "Main"
