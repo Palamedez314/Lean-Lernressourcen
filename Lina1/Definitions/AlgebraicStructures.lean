@@ -48,4 +48,3 @@ class VectorSpace (K : Type u) [Field K] (V : Type v) extends AdditiveAbelianGro
   one_scalar (v : V) : (one : K) · v = v
   scalar_add (a : K) (v u : V) : a · (u + v) = a · u + a · v
   add_scalar (a b : K) (v : V) : (a + b) · v = a · v + b · v
-

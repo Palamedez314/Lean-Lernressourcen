@@ -1,6 +1,7 @@
 
 def Set (α : Type u) := α → Prop
 
+variable {α : Type u}
 
 namespace Set
 
@@ -15,6 +16,9 @@ protected def Subset (s₁ s₂ : Set α) :=
 --Ermöglicht die Notation s₁ ⊆ s₂ für Subset s₁ s₂
 instance : HasSubset (Set α) :=
   ⟨Set.Subset⟩
+
+def empty : Set α := fun _ ↦ False
+def univ : Set α := fun _ ↦ True
 
 end Set
 
